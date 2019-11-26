@@ -24,7 +24,7 @@ object WhatIsAFunction extends App {
   */
 
   val conc = (v1: String, v2: String) => v1.concat(v2)
-  println("Hello ", "Functions")
+  println(conc("Hello ", "Functions"))
 
   val highOrderExplicit: Function1[Int, Function1[Int, Int]] = new Function1[Int, Function1[Int, Int]] {
     override def apply(amount : Int): Function1[Int, Int] = new Function1[Int, Int] {
