@@ -35,4 +35,17 @@ object L3Functions extends App {
    * 3. Fibonacci func
    * 4. is prime number func
    */
+  def greet(name: String, age: Int): String = s"Hi, my name is $name and I am $age years old"
+  def factorial(n: Int): Int = n * factorial(n - 1)
+  def fibonacci(n: Int): Int = if (n == 1 || n == 2) 1 else if (n < 1) 0 else fibonacci(n -1) + fibonacci(n -2)
+  def isPrime(n: Int): Boolean = {
+    def isDivisible(a: Int, b: Int): Boolean = a % b == 0
+    def isSubPrime(a: Int, b: Int): Boolean = if (a < 2*b) true else if (isDivisible(a, b)) false else isSubPrime(a, b+1)
+    if (n <= 1) false else isSubPrime(n, 2)
+  }
+  def testPrime(n: Int): Unit = {
+    println(n + " => " + isPrime(n))
+    if (n > 1) testPrime(n-1)
+  };
+  testPrime(20)
 }
