@@ -54,4 +54,19 @@ object L2Expressions extends App {
 
   // val anoterValue = z + 1
   // fails, z is undefided
+
+  /**
+   * 1. difeference between "hello world" vs println("hello world")
+   */
+
+  /** 2. */
+  val someValue = {
+    2 < 3
+  }
+
+  /** 3. */
+  val someOtherValue = {
+    if (someValue) 239 else 986
+    42
+  }
 }
