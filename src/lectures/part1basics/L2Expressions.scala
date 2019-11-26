@@ -57,16 +57,20 @@ object L2Expressions extends App {
 
   /**
    * 1. difeference between "hello world" vs println("hello world")
+   *
+   * String is an expression, print is an instruction
    */
 
   /** 2. */
   val someValue = {
     2 < 3
   }
+  // someValue evaluates (=) true
 
   /** 3. */
   val someOtherValue = {
     if (someValue) 239 else 986
     42
   }
+  // evaluates to 42
 }
