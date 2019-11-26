@@ -27,4 +27,12 @@ object L3Functions extends App {
     def aSmallFunc(a: Int, b: Int): Int = a + b
     aSmallFunc(n, n-1)
   }
+
+  /**
+   * Construct:
+   * 1. A greeting func (name, age) => "Hi, my name is $name and I am $age years old"
+   * 2. Factorial func
+   * 3. Fibonacci func
+   * 4. is prime number func
+   */
 }
