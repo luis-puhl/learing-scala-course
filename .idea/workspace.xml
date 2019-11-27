@@ -2,7 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L3Functions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L3Functions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L1ValuesVariablesTypes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L2ValuesVariablesTypes.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L2Expressions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L3Expressions.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L3Functions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L4Functions.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -43,7 +46,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L3Functions">
+  <component name="RunManager" selected="Application.L6Recursion">
     <configuration name="Expressions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L1Expressions" />
       <module name="rockthejvm-scala" />
@@ -58,7 +61,7 @@
       </method>
     </configuration>
     <configuration name="L3Functions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L3Functions" />
+      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L4Functions" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
@@ -70,12 +73,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ScalaPlayground" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="playground.ScalaPlayground" />
+    <configuration name="L6Recursion" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L6Recursion" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="playground.*" />
+          <option name="PATTERN" value="lectures.part1basics.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -84,7 +87,7 @@
       </method>
     </configuration>
     <configuration name="ValuesVariablesTypes" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L1ValuesVariablesTypes" />
+      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L2ValuesVariablesTypes" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
@@ -111,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L6Recursion" />
         <item itemvalue="Application.L3Functions" />
         <item itemvalue="Application.Expressions" />
         <item itemvalue="Application.WhatIsAFunction" />
         <item itemvalue="Application.ValuesVariablesTypes" />
-        <item itemvalue="Application.ScalaPlayground" />
       </list>
     </recent_temporary>
   </component>

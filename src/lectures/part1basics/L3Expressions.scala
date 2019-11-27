@@ -1,6 +1,6 @@
 package lectures.part1basics
 
-object L2Expressions extends App {
+object L3Expressions extends App {
   val x = 1 + 2 // expression
   println(x)
 

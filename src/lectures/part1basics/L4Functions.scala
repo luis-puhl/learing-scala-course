@@ -1,6 +1,6 @@
 package lectures.part1basics
 
-object L3Functions extends App {
+object L4Functions extends App {
   def aFunction(a: String, b: Int): String =
     a + " " + b
   // def is a single expression
@@ -57,11 +57,10 @@ object L3Functions extends App {
   // too big
   // val belfegor: BigInt =  BigInt("1000000000000066600000000000001")
   def outTest(i: BigInt): Unit = println(i + " => " + isPrime(i))
-  def plusOneTest(i: Long): Unit = {
+  def plusOneTest(i: BigInt): Unit = {
     outTest(i)
     outTest(i+1)
   }
-  def outTest(i: String) = println(i + " => " + isPrime(BigInt(i)))
   plusOneTest(62219L)
   plusOneTest(104729L)
   plusOneTest(5915587277L)
