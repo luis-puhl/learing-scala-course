@@ -36,11 +36,17 @@ object L3Functions extends App {
    * 4. is prime number func
    */
   def greet(name: String, age: Int): String = s"Hi, my name is $name and I am $age years old"
-  def factorial(n: Int): Int = n * factorial(n - 1)
+  println("greet", greet("David", 12))
+
+  def factorial(n: Int): Int = if (n > 1) n * factorial(n - 1) else 1
+  println("factorial(5)", factorial(5))
+
   def fibonacci(n: Int): Int = if (n == 1 || n == 2) 1 else if (n < 1) 0 else fibonacci(n -1) + fibonacci(n -2)
-  def isPrime(n: Int): Boolean = {
-    def isDivisible(a: Int, b: Int): Boolean = a % b == 0
-    def isSubPrime(a: Int, b: Int): Boolean = if (a < 2*b) true else if (isDivisible(a, b)) false else isSubPrime(a, b+1)
+  println("fibonacci(8)", fibonacci(8))
+
+  def isPrime(n: BigInt): Boolean = {
+    def isDivisible(a: BigInt, b: BigInt): Boolean = a % b == 0
+    def isSubPrime(a: BigInt, b: BigInt): Boolean = if (a < b*b) true else if (isDivisible(a, b)) false else isSubPrime(a, b+1)
     if (n <= 1) false else isSubPrime(n, 2)
   }
   def testPrime(n: Int): Unit = {
@@ -48,4 +54,17 @@ object L3Functions extends App {
     if (n > 1) testPrime(n-1)
   };
   testPrime(20)
+  // too big
+  // val belfegor: BigInt =  BigInt("1000000000000066600000000000001")
+  def outTest(i: BigInt): Unit = println(i + " => " + isPrime(i))
+  def plusOneTest(i: Long): Unit = {
+    outTest(i)
+    outTest(i+1)
+  }
+  def outTest(i: String) = println(i + " => " + isPrime(BigInt(i)))
+  plusOneTest(62219L)
+  plusOneTest(104729L)
+  plusOneTest(5915587277L)
+  plusOneTest(100000000003L)
+  plusOneTest(1000000000537L)
 }
