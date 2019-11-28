@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L10ObjectOrientedBasics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part2oop/L10ObjectOrientedBasics.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L10ObjectOrientedBasics">
+  <component name="RunManager" selected="Application.L12SyntaticSugar">
     <configuration name="L10ObjectOrientedBasics" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L10ObjectOrientedBasics" />
       <module name="rockthejvm-scala" />
@@ -58,12 +57,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L7CallByValueVsCallByName" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L7CallByValueVsCallByName" />
+    <configuration name="L12SyntaticSugar" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L12SyntaticSugar" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part1basics.*" />
+          <option name="PATTERN" value="lectures.part2oop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L12SyntaticSugar" />
         <item itemvalue="Application.L10ObjectOrientedBasics" />
         <item itemvalue="Application.L9Strings" />
         <item itemvalue="Scala Console.Scala Console" />
         <item itemvalue="Application.L8DefaultArgs" />
-        <item itemvalue="Application.L7CallByValueVsCallByName" />
       </list>
     </recent_temporary>
   </component>
