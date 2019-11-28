@@ -43,13 +43,13 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L9Strings">
-    <configuration name="L6Recursion" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L6Recursion" />
+  <component name="RunManager" selected="Application.L10ObjectOrientedBasics">
+    <configuration name="L10ObjectOrientedBasics" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L10ObjectOrientedBasics" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part1basics.*" />
+          <option name="PATTERN" value="lectures.part2oop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -108,11 +108,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L10ObjectOrientedBasics" />
         <item itemvalue="Application.L9Strings" />
         <item itemvalue="Scala Console.Scala Console" />
         <item itemvalue="Application.L8DefaultArgs" />
         <item itemvalue="Application.L7CallByValueVsCallByName" />
-        <item itemvalue="Application.L6Recursion" />
       </list>
     </recent_temporary>
   </component>
