@@ -6,6 +6,18 @@ object L10ObjectOrientedBasics extends App {
   println(person.x)
   person.greet("Dave")
   person.greet()
+
+  // test
+  val author = new Writer("Charles", "Dickens", 1812)
+  val impostor = new Writer("Charles", "Dickens", 1812)
+  val novel = new Novel("Great Expectations", author, 1861)
+  println(novel.author.fullName + ": " + novel.authorAnge)
+  println(novel.isWrittenBy(impostor))
+
+  val counter = new Counter
+  counter.inc.print
+  counter.inc.inc.inc.print
+  counter.inc(10).print
 }
 
 // constructor (name: String, age: Int)
@@ -39,10 +51,10 @@ Novel: name, year of release, author
  - copy (new year of release) = new instance of Novel
  */
 class Writer(val name: String, val surname: String, val year: Int) {
-  def fullName(): String = s"${surname.toUpperCase()}, ${name.take(1)}"
+  def fullName: String = s"${surname.toUpperCase()}, ${name.take(1)}"
 }
 class Novel(val name: String, val author: Writer, val yearOfRelease: Int) {
-  def authorAnge(): Int = author.year - yearOfRelease
+  def authorAnge: Int = yearOfRelease - author.year
   def isWrittenBy(author: Writer): Boolean = this.author == author
   def copy(yearOfRelease: Int): Novel = new Novel(name, author, yearOfRelease)
 }
@@ -54,8 +66,21 @@ Counter class
  - method to increment/decrement => new Counter
  - overload inc/dec to receive an amount
  */
-class Counter(val value: Int = 0) {
-  def current(): Int = value
-  def inc(i: Int = 1) = new Counter(value + i)
-  def dec(i: Int = 1) = new Counter(value - i)
+class Counter(val count: Int = 0) {
+  // immutability
+  def inc = {
+    println("incrementing")
+    new Counter(count + 1)
+  }
+  def dec = {
+    println("decrementing")
+    new Counter(count - 1)
+  }
+  def inc(i: Int = 1): Counter =
+    if (i <= 0) this
+    else inc.inc(i-1)
+  def dec(i: Int = 1): Counter =
+    if (i <= 0) this
+    else dec.dec(i-1)
+  def print = println(count)
 }
