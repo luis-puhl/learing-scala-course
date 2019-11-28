@@ -3,9 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L1ValuesVariablesTypes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L2ValuesVariablesTypes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L2Expressions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L3Expressions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L3Functions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L4Functions.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -46,7 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L6Recursion">
+  <component name="RunManager" selected="Application.L7CallByValueVsCallByName">
     <configuration name="Expressions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L1Expressions" />
       <module name="rockthejvm-scala" />
@@ -86,8 +83,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ValuesVariablesTypes" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L2ValuesVariablesTypes" />
+    <configuration name="L7CallByValueVsCallByName" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L7CallByValueVsCallByName" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
@@ -114,11 +111,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L7CallByValueVsCallByName" />
         <item itemvalue="Application.L6Recursion" />
         <item itemvalue="Application.L3Functions" />
         <item itemvalue="Application.Expressions" />
         <item itemvalue="Application.WhatIsAFunction" />
-        <item itemvalue="Application.ValuesVariablesTypes" />
       </list>
     </recent_temporary>
   </component>
