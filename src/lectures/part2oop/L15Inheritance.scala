@@ -1,6 +1,6 @@
 package lectures.part2oop
 
-object L15InheritanceAndTraits extends App {
+object L15Inheritance extends App {
   sealed class Animal {
     def eat = println("nomnomnom")
     private val filo = "filo"
