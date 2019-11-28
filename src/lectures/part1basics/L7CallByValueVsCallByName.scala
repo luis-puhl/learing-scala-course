@@ -18,9 +18,16 @@ object L7CallByValueVsCallByName  extends App {
   def print1s(x: Int, y: => Int): Unit = println(x)
 
   // breaks, infinite call
-  print1s(infinite(), 12)
+//  print1s(infinite(), 12)
 
   // does not break because the y is eval is delayed
   // and as y is not used, infinite is never called
   print1s(12, infinite())
+
+  def manyUses(x: => Int) = x + x
+  def sideEffectInt(x: Int) = {
+    println(s"sideEffectInt $x")
+    x
+  }
+  manyUses(sideEffectInt(10))
 }
