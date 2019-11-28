@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L7CallByValueVsCallByName.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part1basics/L7CallByValueVsCallByName.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -44,33 +43,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L8DefaultArgs">
-    <configuration name="Expressions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L1Expressions" />
-      <module name="rockthejvm-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part1basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L3Functions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L4Functions" />
-      <module name="rockthejvm-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part1basics.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.L9Strings">
     <configuration name="L6Recursion" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L6Recursion" />
       <module name="rockthejvm-scala" />
@@ -110,13 +83,36 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="L9Strings" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part1basics.L9Strings" />
+      <module name="rockthejvm-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part1basics.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Scala Console" type="ScalaScriptConsoleRunConfiguration" factoryName="Scala Console" temporary="true" show_console_on_std_err="false" show_console_on_std_out="false">
+      <module name="rockthejvm-scala" />
+      <option name="allowRunningInParallel" value="false" />
+      <option name="javaOptions" value="-Djline.terminal=NONE" />
+      <option name="myConsoleArgs" value="" />
+      <option name="workingDirectory" value="$PROJECT_DIR$" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L9Strings" />
+        <item itemvalue="Scala Console.Scala Console" />
         <item itemvalue="Application.L8DefaultArgs" />
         <item itemvalue="Application.L7CallByValueVsCallByName" />
         <item itemvalue="Application.L6Recursion" />
-        <item itemvalue="Application.L3Functions" />
-        <item itemvalue="Application.Expressions" />
       </list>
     </recent_temporary>
   </component>
