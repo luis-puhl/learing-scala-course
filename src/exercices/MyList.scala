@@ -1,7 +1,5 @@
 package exercices
 
-import scala.runtime.Nothing$
-
 /**
  * Holds int
  * - head == first
@@ -15,6 +13,7 @@ abstract class MyList[+A] {
   def tail: MyList[A]
   def isEmpty: Boolean
   def add[B >: A](x: B): MyList[B]
+  def +[B >: A](x: B): MyList[B] = add(x)
   def printElements: String
   override def toString: String = s"[$printElements]"
   def filter(t: MyPredicate[A]): MyList[A]
@@ -23,7 +22,7 @@ abstract class MyList[+A] {
   def ++[B >: A](list: MyList[B]): MyList[B]
 }
 
-object Empty extends MyList[Nothing] {
+case object Empty extends MyList[Nothing] {
   def head: Nothing = throw new NoSuchElementException
   def tail: MyList[Nothing] = throw new NoSuchElementException
   def isEmpty: Boolean = true
@@ -34,7 +33,7 @@ object Empty extends MyList[Nothing] {
   override def flatMap[B](t: MyTransformer[Nothing, MyList[B]]): MyList[B] = Empty
   override def ++[B >: Nothing](list: MyList[B]): MyList[B] = list
 }
-class Const[+A](headVal: A, val tailVal: MyList[A] = Empty) extends MyList[A] {
+case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
   override def head: A = headVal
   override def tail: MyList[A] = tailVal
   override def isEmpty: Boolean = false
@@ -51,6 +50,7 @@ class Const[+A](headVal: A, val tailVal: MyList[A] = Empty) extends MyList[A] {
     transformer.transform(headVal) ++ tailVal.flatMap(transformer)
   override def ++[B >: A](list: MyList[B]): MyList[B] =
     new Const[B](headVal, tailVal ++ list)
+  override def +[B >: A](x: B): Const[B] = new Const[B](x, this)
 }
 
 /*
@@ -126,5 +126,9 @@ object ListTest extends App {
 
   println("Testing 7 concat with ++")
   println(ints.toString + " => " + (ints ++ strs).toString)
+
+  val otherInts: Const[Int] = Const(1) + 2 + 3 + 4
+  // val cloned = otherInts.clone()
+  // println(cloned)
 }
 
