@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercices/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercices/MyList.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -48,7 +49,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L19AnonymousClasses">
+  <component name="RunManager" selected="Application.ListTest">
     <configuration name="L15InheritanceAndTraits" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L15Inheritance" />
       <module name="rockthejvm-scala" />
@@ -116,8 +117,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.L19AnonymousClasses" />
         <item itemvalue="Application.ListTest" />
+        <item itemvalue="Application.L19AnonymousClasses" />
         <item itemvalue="Application.L18Generics" />
         <item itemvalue="Application.L16AbstractDataTypes" />
         <item itemvalue="Application.L15InheritanceAndTraits" />
