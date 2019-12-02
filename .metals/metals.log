@@ -25,3 +25,21 @@ WARN  no build target: /home/puhl/project/rockthejvm-scala/src/lectures/part2oop
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/lectures/part2oop/L22Exceptions.scala
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/lectures/part2oop/L22Exceptions.scala
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/lectures/part2oop/L22Exceptions.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/commands/Cat.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/commands/Command.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/commands/Echo.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/Directory.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/DirEntry.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/File.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/Directory.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/filesystem/Filesystem.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/filesystem/FilesystemException.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/filesystem/State.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/filesystem/Filesystem.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/Directory.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/File.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/files/DirEntry.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/com/rtjvm/scala/oop/filesystem/Filesystem.scala
+INFO  shutting down Metals
+INFO  time: initialize in 0.5s
+WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
