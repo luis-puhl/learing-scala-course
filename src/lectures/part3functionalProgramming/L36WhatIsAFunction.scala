@@ -1,6 +1,10 @@
 package lectures.part3functionalProgramming
 
 object L36WhatIsAFunction extends App {
+  trait Action[A, B] {
+    def apply(element: A): B
+  }
+  
   val doubler = new Action[Int, Int] {
     override def apply(element: Int): Int = element * 2
   }
@@ -39,8 +43,4 @@ object L36WhatIsAFunction extends App {
   // curried function
   println(highOrderExplicit(3)(3))
 
-}
-
-trait Action[A, B] {
-  def apply(element: A): B
 }
