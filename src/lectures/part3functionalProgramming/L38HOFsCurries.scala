@@ -23,4 +23,14 @@ object L38HOFsCurries extends App {
     x + 1
   }
   println(nTimesExtraHOF(printStack, 10)(1))
+
+  // curried functions
+  // see nTimes
+
+  // functions with multiple params lists
+  def curriedFormatter(c: String)(x: Double): String = c.format(x)
+  val stdFormat: (Double => String) = curriedFormatter("%4.2f")
+  val preciseFormat: (Double => String) = curriedFormatter("%10.8f")
+  println(stdFormat(Math.PI))
+  println(preciseFormat(Math.PI))
 }
