@@ -16,9 +16,9 @@ abstract class MyList[+A] {
   def +[B >: A](x: B): MyList[B] = add(x)
   def printElements: String
   override def toString: String = s"[$printElements]"
-  def filter(t: MyPredicate[A]): MyList[A]
-  def map[B](t: MyTransformer[A, B]): MyList[B]
-  def flatMap[B](t: MyTransformer[A, MyList[B]]): MyList[B]
+  def filter(t: A => Boolean): MyList[A]
+  def map[B](t: A => B): MyList[B]
+  def flatMap[B](t: A => MyList[B]): MyList[B]
   def ++[B >: A](list: MyList[B]): MyList[B]
 }
 
@@ -28,9 +28,9 @@ case object Empty extends MyList[Nothing] {
   def isEmpty: Boolean = true
   def add[A >: Nothing](x: A): MyList[A] = new Const[A](x, Empty)
   override def printElements: String = ""
-  override def filter(t: MyPredicate[Nothing]): MyList[Nothing] = Empty
-  override def map[B](t: MyTransformer[Nothing, B]): MyList[B] = Empty
-  override def flatMap[B](t: MyTransformer[Nothing, MyList[B]]): MyList[B] = Empty
+  override def filter(t: Nothing => Boolean): MyList[Nothing] = Empty
+  override def map[B](t: Nothing => B): MyList[B] = Empty
+  override def flatMap[B](t: Nothing => MyList[B]): MyList[B] = Empty
   override def ++[B >: Nothing](list: MyList[B]): MyList[B] = list
 }
 case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
@@ -41,13 +41,13 @@ case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
   override def printElements: String =
     if (tailVal.isEmpty) headVal.toString
     else headVal.toString + ", " + tailVal.printElements
-  override def filter(predicate: MyPredicate[A]): MyList[A] =
-    if (predicate.test(headVal)) new Const(headVal, tailVal.filter(predicate))
+  override def filter(predicate: A => Boolean): MyList[A] =
+    if (predicate(headVal)) new Const(headVal, tailVal.filter(predicate))
     else tailVal.filter(predicate)
-  override def map[B](transformer: MyTransformer[A, B]): MyList[B] =
-    new Const(transformer.transform(headVal), tailVal.map(transformer))
-  override def flatMap[B](transformer: MyTransformer[A, MyList[B]]): MyList[B] =
-    transformer.transform(headVal) ++ tailVal.flatMap(transformer)
+  override def map[B](transformer: A => B): MyList[B] =
+    new Const(transformer(headVal), tailVal.map(transformer))
+  override def flatMap[B](transformer: A => MyList[B]): MyList[B] =
+    transformer(headVal) ++ tailVal.flatMap(transformer)
   override def ++[B >: A](list: MyList[B]): MyList[B] =
     new Const[B](headVal, tailVal ++ list)
   override def +[B >: A](x: B): Const[B] = new Const[B](x, this)
@@ -61,20 +61,20 @@ case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
  - filter(predicate) => MyList
  - flatMap(transformer from A to MyList[B]) => MyList[B]
  */
-trait MyPredicate[-T] {
-  def test(t: T): Boolean
-}
-trait MyTransformer[-A, B] {
-  def transform(a: A): B
-}
+// trait MyPredicate[-T] {
+//   def test(t: T): Boolean
+// }
+// trait MyTransformer[-A, B] {
+//   def transform(a: A): B
+// }
 
-class StringToIntTransformer extends MyTransformer[String, Int] {
-  override def transform(a: String): Int = a.trim.toInt
-}
-class NplusOneFlatMap extends MyTransformer[Int, MyList[Int]] {
-  override def transform(a: Int): MyList[Int] =
-    new Const[Int](a, new Const[Int](a+1))
-}
+// class StringToIntTransformer extends MyTransformer[String, Int] {
+//   override def transform(a: String): Int = a.trim.toInt
+// }
+// class NplusOneFlatMap extends MyTransformer[Int, MyList[Int]] {
+//   override def transform(a: Int): MyList[Int] =
+//     new Const[Int](a, new Const[Int](a+1))
+// }
 
 object ListTest extends App {
   def test[A](l: MyList[A]) = {
@@ -108,20 +108,20 @@ object ListTest extends App {
 
   val ints: MyList[Int] = new Const(1).add(2).add(3)
   println("Testing 4 Filter")
-  println(ints.toString + " => " + ints.filter(new MyPredicate[Int] {
-    override def test(t: Int): Boolean = t % 2 == 0
+  println(ints.toString + " => " + ints.filter(new Function1[Int, Boolean] {
+    override def apply(t: Int): Boolean = t % 2 == 0
   }).toString)
   println(ints.toString + " => " + ints.filter((t: Int) => t % 2 == 0).toString)
 
   println("Testing 5 Map")
   val strs: MyList[String] = new Const("  1  ").add("  2  ").add("  3  ")
-  println(strs.toString + " => " + strs.map(new StringToIntTransformer).toString)
+//  println(strs.toString + " => " + strs.map(new StringToIntTransformer).toString)
   println(ints.toString + " => " + ints.map[Int]((t: Int) => t * 2).toString)
 
   println("Testing 6 Flat Map")
-  println(ints.toString + " => " + ints.flatMap(new NplusOneFlatMap).toString)
-  println(ints.toString + " => " + ints.flatMap(new MyTransformer[Int, MyList[Int]] {
-    override def transform(a: Int): MyList[Int] = new Const[Int](a, new Const[Int](a))
+//  println(ints.toString + " => " + ints.flatMap(new NplusOneFlatMap).toString)
+  println(ints.toString + " => " + ints.flatMap(new Function1[Int, MyList[Int]] {
+    override def apply(a: Int): MyList[Int] = new Const[Int](a, new Const[Int](a))
   }).toString)
 
   println("Testing 7 concat with ++")

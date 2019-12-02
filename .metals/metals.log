@@ -43,3 +43,22 @@ WARN  no build target: /home/puhl/project/rockthejvm-scala/demo_filesystem/src/c
 INFO  shutting down Metals
 INFO  time: initialize in 0.5s
 WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+INFO  no build target: using presentation compiler with only scala-library
+something's wrong: no file:///home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala in exercices.MyList[B]RangePosition(file:///home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala, 497, 497, 506)
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+something's wrong: no file:///home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala in exercices.MyTransformer[A,B]RangePosition(file:///home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala, 426, 426, 445)
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
