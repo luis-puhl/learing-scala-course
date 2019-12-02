@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/exercices/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercices/MyList.scala" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L38HOFsCurries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L38HOFsCurries.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -122,8 +123,8 @@
     <recent_temporary>
       <list>
         <item itemvalue="Application.L38HOFsCurries" />
-        <item itemvalue="Application.L37AnonymousFunctions" />
         <item itemvalue="Application.ListTest" />
+        <item itemvalue="Application.L37AnonymousFunctions" />
         <item itemvalue="Application.L23PackagingImports" />
         <item itemvalue="Application.L22Exceptions" />
       </list>

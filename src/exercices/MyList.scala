@@ -20,6 +20,11 @@ abstract class MyList[+A] {
   def map[B](t: A => B): MyList[B]
   def flatMap[B](t: A => MyList[B]): MyList[B]
   def ++[B >: A](list: MyList[B]): MyList[B]
+
+  def foreach(f: A => Unit): Unit
+  def sort(f: (A, A) => Int): MyList[A]
+  def zipWith[B >: A, C](list: MyList[B], f: (A, B) => C): MyList[C]
+  def fold[B](start: B)(f: (A, B) => B): B
 }
 
 case object Empty extends MyList[Nothing] {
@@ -32,6 +37,11 @@ case object Empty extends MyList[Nothing] {
   override def map[B](t: Nothing => B): MyList[B] = Empty
   override def flatMap[B](t: Nothing => MyList[B]): MyList[B] = Empty
   override def ++[B >: Nothing](list: MyList[B]): MyList[B] = list
+
+  override def foreach(f: Nothing => Unit): Unit = Unit
+  override def sort(f: (Nothing, Nothing) => Int): MyList[Nothing] = Empty
+  override def fold[B](start: B)(f: (Nothing, B) => B): B = start
+  override def zipWith[B >: Nothing, C >: Nothing](list: MyList[B], f: (Nothing, B) => C): MyList[C] = Empty
 }
 case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
   override def head: A = headVal
@@ -51,6 +61,26 @@ case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
   override def ++[B >: A](list: MyList[B]): MyList[B] =
     new Const[B](headVal, tailVal ++ list)
   override def +[B >: A](x: B): Const[B] = new Const[B](x, this)
+
+  override def foreach(f: A => Unit): Unit = {
+    f(headVal)
+    tailVal.foreach(f)
+  }
+  override def sort(f: (A, A) => Int): MyList[A] = {
+    def addSorted(l: MyList[A], v: A, f: (A, A) => Int): MyList[A] =
+      if (l.isEmpty) Const(v, l)
+      else if (f(v, l.head) > 0) Const[A](v, l)
+      else Const[A](l.head, addSorted(l.tail, v, f))
+    val tail = tailVal.sort(f)
+    addSorted(tail, headVal, f)
+  }
+  override def zipWith[B >: A, C](list: MyList[B], f: (A, B) => C): MyList[C] = {
+    val head: C = f(this.headVal, list.head)
+    val tail = tailVal.zipWith[B, C](list.tail, f)
+    Const[C](head, tail)
+  }
+  override def fold[B](start: B)(f: (A, B) => B): B =
+    tailVal.fold[B](f(headVal, start))(f)
 }
 
 /*
@@ -127,8 +157,16 @@ object ListTest extends App {
   println("Testing 7 concat with ++")
   println(ints.toString + " => " + (ints ++ strs).toString)
 
-  val otherInts: Const[Int] = Const(1) + 2 + 3 + 4
-  // val cloned = otherInts.clone()
-  // println(cloned)
+  val otherInts: Const[Int] = Const(1) + 2 + 3 + 4 + 4 + 3 + 2 + 1
+//  val cloned = otherInts.clone()
+//  println(cloned)
+
+  println("\n\tHOFs and Curries")
+  print("foreach: ")
+  otherInts.foreach(i => print(s"$i, "))
+  println("")
+  println("sort: " + otherInts.sort((a, b) => b - a))
+  println("zip: " + otherInts.zipWith[Int, String](otherInts, (a, b) => a.toString + b.toString))
+  println("fold: " + otherInts.fold(0)((a, b) => a + b))
 }
 

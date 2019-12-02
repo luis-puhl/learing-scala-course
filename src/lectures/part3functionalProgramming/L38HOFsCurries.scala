@@ -33,4 +33,25 @@ object L38HOFsCurries extends App {
   val preciseFormat: (Double => String) = curriedFormatter("%10.8f")
   println(stdFormat(Math.PI))
   println(preciseFormat(Math.PI))
+
+  def toCurry[T](f: (T, T) => T): T => T => T =
+    (v1: T) => (v2: T) => f(v1, v2)
+  def fromCurry[T](f: T => T => T): (T, T) => T =
+    (v1: T, v2: T) => f(v1)(v2)
+
+  val f = (x: Int, y: Int) => x + y
+  println("\n\tto/from curry test")
+  println("base: " + f(1, 2))
+  println("toCurry: " + toCurry[Int](f)(1)(2))
+  println("fromCurry: " + fromCurry[Int](toCurry[Int](f))(1, 2))
+
+  println("\n\tCompose test")
+  def compose[T](f: T=>T, g: T=>T): T=>T = (x: T) => f(g(x))
+  def andThen[T](f: T=>T, g: T=>T): T=>T = (x: T) => g(f(x))
+  val f1 = (x: Int) => x +2
+  val f2 = (x: Int) => x *2
+  println("f1(2) : " + f1(2))
+  println("f2(2) : " + f2(2))
+  println("fog(2) : " + compose(f1, f2)(2))
+  println("gof(2) : " + andThen(f1, f2)(2))
 }
