@@ -62,3 +62,15 @@ WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+Dec 02, 2019 5:23:54 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
+WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+Dec 02, 2019 5:23:55 PM scala.meta.internal.pc.CompilerAccess handleError
+SEVERE: null
+java.lang.NullPointerException
+	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
+
