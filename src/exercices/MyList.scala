@@ -23,7 +23,7 @@ abstract class MyList[+A] {
 
   def foreach(f: A => Unit): Unit
   def sort(f: (A, A) => Int): MyList[A]
-  def zipWith[B >: A, C](list: MyList[B], f: (A, B) => C): MyList[C]
+  def zipWith[B, C](list: MyList[B], f: (A, B) => C): MyList[C]
   def fold[B](start: B)(f: (A, B) => B): B
 }
 
@@ -43,44 +43,44 @@ case object Empty extends MyList[Nothing] {
   override def fold[B](start: B)(f: (Nothing, B) => B): B = start
   override def zipWith[B >: Nothing, C >: Nothing](list: MyList[B], f: (Nothing, B) => C): MyList[C] = Empty
 }
-case class Const[+A](headVal: A, tailVal: MyList[A] = Empty) extends MyList[A] {
-  override def head: A = headVal
-  override def tail: MyList[A] = tailVal
+case class Const[+A](h: A, t: MyList[A] = Empty) extends MyList[A] {
+  override def head: A = h
+  override def tail: MyList[A] = t
   override def isEmpty: Boolean = false
   override def add[B >: A](x: B): MyList[B] = new Const[B](x, this)
   override def printElements: String =
-    if (tailVal.isEmpty) headVal.toString
-    else headVal.toString + ", " + tailVal.printElements
+    if (t.isEmpty) h.toString
+    else h.toString + ", " + t.printElements
   override def filter(predicate: A => Boolean): MyList[A] =
-    if (predicate(headVal)) new Const(headVal, tailVal.filter(predicate))
-    else tailVal.filter(predicate)
+    if (predicate(h)) new Const(h, t.filter(predicate))
+    else t.filter(predicate)
   override def map[B](transformer: A => B): MyList[B] =
-    new Const(transformer(headVal), tailVal.map(transformer))
+    new Const(transformer(h), t.map(transformer))
   override def flatMap[B](transformer: A => MyList[B]): MyList[B] =
-    transformer(headVal) ++ tailVal.flatMap(transformer)
+    transformer(h) ++ t.flatMap(transformer)
   override def ++[B >: A](list: MyList[B]): MyList[B] =
-    new Const[B](headVal, tailVal ++ list)
+    new Const[B](h, t ++ list)
   override def +[B >: A](x: B): Const[B] = new Const[B](x, this)
 
   override def foreach(f: A => Unit): Unit = {
-    f(headVal)
-    tailVal.foreach(f)
+    f(h)
+    t.foreach(f)
   }
-  override def sort(f: (A, A) => Int): MyList[A] = {
-    def addSorted(l: MyList[A], v: A, f: (A, A) => Int): MyList[A] =
-      if (l.isEmpty) Const(v, l)
-      else if (f(v, l.head) > 0) Const[A](v, l)
-      else Const[A](l.head, addSorted(l.tail, v, f))
-    val tail = tailVal.sort(f)
-    addSorted(tail, headVal, f)
+  override def sort(compare: (A, A) => Int): MyList[A] = {
+    def insertionSort(x: A, sortedList: MyList[A]): MyList[A] =
+      if (sortedList.isEmpty) Const(x, Empty)
+      else if (compare(x, sortedList.head) <= 0) Const[A](x, sortedList)
+      else Const[A](sortedList.head, insertionSort(x, sortedList.tail))
+    val sortedTail = t.sort(compare)
+    insertionSort(h, sortedTail)
   }
   override def zipWith[B >: A, C](list: MyList[B], f: (A, B) => C): MyList[C] = {
-    val head: C = f(this.headVal, list.head)
-    val tail = tailVal.zipWith[B, C](list.tail, f)
+    val head: C = f(this.h, list.head)
+    val tail = t.zipWith[B, C](list.tail, f)
     Const[C](head, tail)
   }
   override def fold[B](start: B)(f: (A, B) => B): B =
-    tailVal.fold[B](f(headVal, start))(f)
+    t.fold[B](f(h, start))(f)
 }
 
 /*
