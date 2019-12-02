@@ -3,9 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/exercices/MyList.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/exercices/MyList.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/playground/FunctionalTree.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/playground/FunctionalTree.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/WhatIsAFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/WhatIsAFunction.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />

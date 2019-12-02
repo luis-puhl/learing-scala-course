@@ -31,6 +31,7 @@ object WhatIsAFunction extends App {
       override def apply(value: Int): Int = amount + value
     }
   }
+  // curried function
   val highOrder: (Int) => ((Int) => Int) = (amount: Int) => (value: Int) => value + amount
 
   val adder3 = highOrder(3)
