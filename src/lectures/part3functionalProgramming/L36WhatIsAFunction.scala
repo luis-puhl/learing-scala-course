@@ -1,6 +1,6 @@
 package lectures.part3functionalProgramming
 
-object WhatIsAFunction extends App {
+object L36WhatIsAFunction extends App {
   val doubler = new Action[Int, Int] {
     override def apply(element: Int): Int = element * 2
   }
