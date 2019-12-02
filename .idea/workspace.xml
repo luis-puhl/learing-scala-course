@@ -3,7 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -37,6 +36,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="lectures.part3functionalProgramming" />
       <recent name="lectures.part2oop" />
     </key>
   </component>
@@ -52,20 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L37AnonymousFunctions">
-    <configuration name="L19AnonymousClasses" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L19AnonymousClasses" />
-      <module name="rockthejvm-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part2oop.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.L38HOFsCurries">
     <configuration name="L22Exceptions" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L22Exceptions" />
       <module name="rockthejvm-scala" />
@@ -105,6 +92,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="L38HOFsCurries" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L38HOFsCurries" />
+      <module name="rockthejvm-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="exercices.ListTest" />
       <module name="rockthejvm-scala" />
@@ -120,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L38HOFsCurries" />
         <item itemvalue="Application.L37AnonymousFunctions" />
         <item itemvalue="Application.ListTest" />
         <item itemvalue="Application.L23PackagingImports" />
         <item itemvalue="Application.L22Exceptions" />
-        <item itemvalue="Application.L19AnonymousClasses" />
       </list>
     </recent_temporary>
   </component>
