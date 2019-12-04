@@ -78,3 +78,7 @@ INFO  shutting down Metals
 INFO  time: initialize in 0.68s
 WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
 WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala
+INFO  no build target: using presentation compiler with only scala-library
+WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+something's wrong: no file:///home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala in exercices.MyList[B]RangePosition(file:///home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala, 638, 638, 647)
