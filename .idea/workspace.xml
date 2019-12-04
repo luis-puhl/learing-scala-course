@@ -52,20 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L48AllThePatters">
-    <configuration name="L38HOFsCurries" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L38HOFsCurries" />
-      <module name="rockthejvm-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.L49PatternsEverywhere">
     <configuration name="L42Sequences" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L42Sequences" />
       <module name="rockthejvm-scala" />
@@ -118,13 +105,26 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="L49PatternsEverywhere" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L49PatternsEverywhere" />
+      <module name="rockthejvm-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L49PatternsEverywhere" />
         <item itemvalue="Application.L48AllThePatters" />
         <item itemvalue="Application.L47PatternMatching" />
         <item itemvalue="Application.L43TuplesAndMaps" />
         <item itemvalue="Application.L42Sequences" />
-        <item itemvalue="Application.L38HOFsCurries" />
       </list>
     </recent_temporary>
   </component>
