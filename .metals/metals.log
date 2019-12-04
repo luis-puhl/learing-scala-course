@@ -74,3 +74,7 @@ SEVERE: null
 java.lang.NullPointerException
 	at scala.meta.internal.pc.HoverProvider.hover(HoverProvider.scala:37)
 
+INFO  shutting down Metals
+INFO  time: initialize in 0.68s
+WARN  no build tool detected in workspace '/home/puhl/project/rockthejvm-scala'. The most common cause for this problem is that the editor was opened in the wrong working directory, for example if you use sbt then the workspace directory should contain build.sbt. 
+WARN  no build target: /home/puhl/project/rockthejvm-scala/src/exercices/MyList.scala

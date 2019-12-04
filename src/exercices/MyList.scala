@@ -74,7 +74,7 @@ case class Const[+A](h: A, t: MyList[A] = Empty) extends MyList[A] {
     val sortedTail = t.sort(compare)
     insertionSort(h, sortedTail)
   }
-  override def zipWith[B >: A, C](list: MyList[B], f: (A, B) => C): MyList[C] = {
+  override def zipWith[B, C](list: MyList[B], f: (A, B) => C): MyList[C] = {
     val head: C = f(this.h, list.head)
     val tail = t.zipWith[B, C](list.tail, f)
     Const[C](head, tail)
