@@ -52,7 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L47PatternMatching">
+  <component name="RunManager" selected="Application.L48AllThePatters">
     <configuration name="L38HOFsCurries" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L38HOFsCurries" />
       <module name="rockthejvm-scala" />
@@ -105,12 +105,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ListTest" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="exercices.ListTest" />
+    <configuration name="L48AllThePatters" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L48AllThePatters" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="exercices.*" />
+          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -120,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L48AllThePatters" />
         <item itemvalue="Application.L47PatternMatching" />
         <item itemvalue="Application.L43TuplesAndMaps" />
         <item itemvalue="Application.L42Sequences" />
         <item itemvalue="Application.L38HOFsCurries" />
-        <item itemvalue="Application.ListTest" />
       </list>
     </recent_temporary>
   </component>
