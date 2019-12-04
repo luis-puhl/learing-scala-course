@@ -3,8 +3,6 @@
   <component name="ChangeListManager">
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.metals/metals.log" beforeDir="false" afterPath="$PROJECT_DIR$/.metals/metals.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L43TuplesAndMaps.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L43TuplesAndMaps.scala" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -54,20 +52,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Application.L43TuplesAndMaps">
-    <configuration name="L37AnonymousFunctions" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L37AnonymousFunctions" />
-      <module name="rockthejvm-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RunManager" selected="Application.L47PatternMatching">
     <configuration name="L38HOFsCurries" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L38HOFsCurries" />
       <module name="rockthejvm-scala" />
@@ -107,6 +92,19 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="L47PatternMatching" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L47PatternMatching" />
+      <module name="rockthejvm-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="ListTest" type="Application" factoryName="Application" temporary="true">
       <option name="MAIN_CLASS_NAME" value="exercices.ListTest" />
       <module name="rockthejvm-scala" />
@@ -122,11 +120,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L47PatternMatching" />
         <item itemvalue="Application.L43TuplesAndMaps" />
         <item itemvalue="Application.L42Sequences" />
         <item itemvalue="Application.L38HOFsCurries" />
         <item itemvalue="Application.ListTest" />
-        <item itemvalue="Application.L37AnonymousFunctions" />
       </list>
     </recent_temporary>
   </component>
