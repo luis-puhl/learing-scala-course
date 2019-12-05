@@ -1,35 +1,10 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="Setup to Advanced Scala course by Rock the JVM.">
-      <change afterPath="$PROJECT_DIR$/src/lectures/advanced/part1as/L4Recap.scala" afterDir="false" />
+    <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L2ValuesVariablesTypes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L2ValuesVariablesTypes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L3Expressions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L3Expressions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L4Functions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L4Functions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L6Recursion.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L6Recursion.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L7CallByValueVsCallByName.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L7CallByValueVsCallByName.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L8DefaultArgs.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L8DefaultArgs.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part1basics/L9Strings.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part1basics/L9Strings.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L10ObjectOrientedBasics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L10ObjectOrientedBasics.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L12SyntaticSugar.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L12SyntaticSugar.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L14Objects.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L14Objects.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L15Inheritance.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L15Inheritance.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L16AbstractDataTypes.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L16AbstractDataTypes.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L18Generics.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L18Generics.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L19AnonymousClasses.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L19AnonymousClasses.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L21CaseClasses.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L21CaseClasses.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L22Exceptions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L22Exceptions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/L23PackagingImports.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L23PackagingImports.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part2oop/package.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/package.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L36WhatIsAFunction.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L36WhatIsAFunction.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L37AnonymousFunctions.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L37AnonymousFunctions.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L38HOFsCurries.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L38HOFsCurries.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L42Sequences.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L42Sequences.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L43TuplesAndMaps.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L43TuplesAndMaps.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L47PatternMatching.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L47PatternMatching.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L48AllThePatters.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L48AllThePatters.scala" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/lectures/part3functionalProgramming/L49PatternsEverywhere.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part3functionalProgramming/L49PatternsEverywhere.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/advanced/part1as/L4Recap.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/advanced/part1as/L4Recap.scala" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L23PackagingImports.scala" beforeDir="false" afterPath="$PROJECT_DIR$/src/lectures/beginners/part2oop/L23PackagingImports.scala" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +51,7 @@
       <recent name="lectures.part2oop" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.L12SyntaticSugar">
+  <component name="RunManager" selected="Application.L4Recap">
     <configuration name="JavaPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="playground.JavaPlayground" />
       <module name="rockthejvm-scala" />
@@ -103,8 +78,8 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L48AllThePatters" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.beginners.part3functionalProgramming.L48AllThePatters" />
+    <configuration name="L49PatternsEverywhere" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.beginners.part3functionalProgramming.L49PatternsEverywhere" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
@@ -116,12 +91,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L49PatternsEverywhere" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.beginners.part3functionalProgramming.L49PatternsEverywhere" />
+    <configuration name="L4Recap" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.advanced.part1as.L4Recap" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.beginners.part3functionalProgramming.*" />
+          <option name="PATTERN" value="lectures.advanced.part1as.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,11 +119,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L4Recap" />
         <item itemvalue="Application.L12SyntaticSugar" />
         <item itemvalue="Application.ScalaPlayground" />
         <item itemvalue="Application.JavaPlayground" />
         <item itemvalue="Application.L49PatternsEverywhere" />
-        <item itemvalue="Application.L48AllThePatters" />
       </list>
     </recent_temporary>
   </component>
@@ -182,7 +157,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575566881874</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Setup to Advanced Scala course by Rock the JVM.">
+      <created>1575568043665</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1575568043665</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -199,35 +181,43 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_CLEANUP_BEFORE_PROJECT_COMMIT" value="true" />
     <MESSAGE value="Running on intelliJ @ win10" />
     <MESSAGE value="Setup to Advanced Scala course by Rock the JVM." />
     <option name="LAST_COMMIT_MESSAGE" value="Setup to Advanced Scala course by Rock the JVM." />
+    <option name="OPTIMIZE_IMPORTS_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REFORMAT_BEFORE_PROJECT_COMMIT" value="true" />
+    <option name="REARRANGE_BEFORE_PROJECT_COMMIT" value="true" />
   </component>
   <component name="WindowStateProjectService">
     <state x="777" y="434" width="380" height="174" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1575566473228">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="777" y="434" width="380" height="174" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575566473228" />
-    <state x="589" y="114" key="CommitChangelistDialog2" timestamp="1575567901669">
+    <state x="1263" y="411" key="#com.intellij.ide.util.MemberChooser" timestamp="1575569595184">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state x="589" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575567901669" />
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1575566843178">
+    <state x="1263" y="411" key="#com.intellij.ide.util.MemberChooser/0.0.1920.1040@0.0.1920.1040" timestamp="1575569595184" />
+    <state x="589" y="114" key="CommitChangelistDialog2" timestamp="1575568042545">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
-    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1575566843178">
+    <state x="589" y="114" key="CommitChangelistDialog2/0.0.1920.1040@0.0.1920.1040" timestamp="1575568042545" />
+    <state width="692" height="153" key="GridCell.Tab.0.bottom" timestamp="1575570010852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
-    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1575566843178">
+    <state width="692" height="153" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575570010852" />
+    <state width="692" height="153" key="GridCell.Tab.0.center" timestamp="1575570010852">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
-    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1575566843178">
+    <state width="692" height="153" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575570010852" />
+    <state width="692" height="153" key="GridCell.Tab.0.left" timestamp="1575570010851">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
-    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
+    <state width="692" height="153" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575570010851" />
+    <state width="692" height="153" key="GridCell.Tab.0.right" timestamp="1575570010852">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="692" height="153" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575570010852" />
     <state x="440" y="94" key="SettingsEditor" timestamp="1575567799672">
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
@@ -240,5 +230,9 @@
       <screen x="0" y="0" width="1920" height="1040" />
     </state>
     <state x="656" y="125" width="607" height="789" key="find.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575567956929" />
+    <state x="1214" y="361" width="672" height="678" key="search.everywhere.popup" timestamp="1575569754162">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="1214" y="361" width="672" height="678" key="search.everywhere.popup/0.0.1920.1040@0.0.1920.1040" timestamp="1575569754162" />
   </component>
 </project>

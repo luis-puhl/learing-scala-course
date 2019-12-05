@@ -1,6 +1,6 @@
 package lectures.beginners.part2oop
 
-import exercices.{Const, Empty, Empty => EmptyList}
+import exercices.{Const, Empty => EmptyList}
 
 object L23PackagingImports extends App {
 
@@ -11,7 +11,7 @@ object L23PackagingImports extends App {
   val p = exercices.Const
   // grouping import exercices.{Empty, Const}
   val q = Const
-  val r = Empty
+  val r = EmptyList
   // aliasing
   val s = EmptyList
 
