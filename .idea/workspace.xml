@@ -4,7 +4,6 @@
     <list default="true" id="728f9ff7-75f4-4a05-9c85-dbfc021539ec" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -31,8 +30,17 @@
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="1" id="Add" />
   </component>
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
   <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="full.screen.before.presentation.mode" value="false" />
+    <property name="project.structure.last.edited" value="Global Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
   </component>
   <component name="RecentsManager">
     <key name="CopyClassDialog.RECENTS_KEY">
@@ -40,25 +48,13 @@
       <recent name="lectures.part2oop" />
     </key>
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
-  <component name="RunManager" selected="Application.L49PatternsEverywhere">
-    <configuration name="L42Sequences" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L42Sequences" />
+  <component name="RunManager" selected="Application.L12SyntaticSugar">
+    <configuration name="JavaPlayground" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="playground.JavaPlayground" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
+          <option name="PATTERN" value="playground.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -66,25 +62,12 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="L43TuplesAndMaps" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L43TuplesAndMaps" />
+    <configuration name="L12SyntaticSugar" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="lectures.part2oop.L12SyntaticSugar" />
       <module name="rockthejvm-scala" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="L47PatternMatching" type="Application" factoryName="Application" temporary="true">
-      <option name="MAIN_CLASS_NAME" value="lectures.part3functionalProgramming.L47PatternMatching" />
-      <module name="rockthejvm-scala" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="lectures.part3functionalProgramming.*" />
+          <option name="PATTERN" value="lectures.part2oop.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,15 +101,40 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="ScalaPlayground" type="Application" factoryName="Application" temporary="true">
+      <option name="MAIN_CLASS_NAME" value="playground.ScalaPlayground" />
+      <module name="rockthejvm-scala" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="playground.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.L12SyntaticSugar" />
+        <item itemvalue="Application.ScalaPlayground" />
+        <item itemvalue="Application.JavaPlayground" />
         <item itemvalue="Application.L49PatternsEverywhere" />
         <item itemvalue="Application.L48AllThePatters" />
-        <item itemvalue="Application.L47PatternMatching" />
-        <item itemvalue="Application.L43TuplesAndMaps" />
-        <item itemvalue="Application.L42Sequences" />
       </list>
     </recent_temporary>
+  </component>
+  <component name="ServiceViewManager">
+    <option name="viewStates">
+      <list>
+        <serviceView>
+          <treeState>
+            <expand />
+            <select />
+          </treeState>
+        </serviceView>
+      </list>
+    </option>
   </component>
   <component name="SvnConfiguration">
     <configuration />
@@ -153,5 +161,35 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="777" y="434" width="380" height="174" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog" timestamp="1575566473228">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="777" y="434" width="380" height="174" key="#com.intellij.framework.addSupport.AddSupportForSingleFrameworkDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575566473228" />
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom" timestamp="1575566843178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.bottom/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
+    <state width="1340" height="266" key="GridCell.Tab.0.center" timestamp="1575566843178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.center/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
+    <state width="1340" height="266" key="GridCell.Tab.0.left" timestamp="1575566843178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.left/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
+    <state width="1340" height="266" key="GridCell.Tab.0.right" timestamp="1575566843178">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state width="1340" height="266" key="GridCell.Tab.0.right/0.0.1920.1040@0.0.1920.1040" timestamp="1575566843178" />
+    <state x="440" y="94" key="SettingsEditor" timestamp="1575566753217">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="440" y="94" key="SettingsEditor/0.0.1920.1040@0.0.1920.1040" timestamp="1575566753217" />
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog" timestamp="1575566119008">
+      <screen x="0" y="0" width="1920" height="1040" />
+    </state>
+    <state x="661" y="343" key="com.intellij.ide.util.TipDialog/0.0.1920.1040@0.0.1920.1040" timestamp="1575566119008" />
   </component>
 </project>
