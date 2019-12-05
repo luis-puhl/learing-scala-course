@@ -1,11 +1,14 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L18Generics extends App {
+
   class MyList[A] {
     // use the type A
     def add(a: A): MyList[A] = ???
   }
+
   class MyMap[Key, Value]
+
   val a = new MyList[Int]
   val b = new MyList[String]
 

@@ -1,7 +1,6 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
-import exercices.{Empty, Const}
-import exercices.{ Empty => EmptyList }
+import exercices.{Const, Empty, Empty => EmptyList}
 
 object L23PackagingImports extends App {
 

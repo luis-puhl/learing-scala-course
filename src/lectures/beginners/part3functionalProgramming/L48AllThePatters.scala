@@ -1,6 +1,6 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
-import exercices.{MyList, Const, Empty}
+import exercices.{Const, Empty, MyList}
 
 object L48AllThePatters extends App {
   // 1 - Constants

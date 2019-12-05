@@ -1,10 +1,11 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
 object L36WhatIsAFunction extends App {
+
   trait Action[A, B] {
     def apply(element: A): B
   }
-  
+
   val doubler = new Action[Int, Int] {
     override def apply(element: Int): Int = element * 2
   }

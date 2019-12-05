@@ -1,6 +1,7 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L21CaseClasses extends App {
+
   /*
   class with object companion
   equals, hashCode, toString

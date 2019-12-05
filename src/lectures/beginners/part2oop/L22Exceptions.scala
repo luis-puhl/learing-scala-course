@@ -1,4 +1,4 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L22Exceptions extends App {
   var x: String = null
@@ -37,7 +37,7 @@ object L22Exceptions extends App {
   }
   //  crashWithOutOfMemoryError()
   //  Exception in thread "main" java.lang.OutOfMemoryError: Requested array size exceeds VM limit
-  // at lectures.part2oop.L22Exceptions$.crashWithOutOfMemoryError$default$2(L22Exceptions.scala:33)
+  // at lectures.beginners.part2oop.L22Exceptions$.crashWithOutOfMemoryError$default$2(L22Exceptions.scala:33)
 
   // OOM
   // val arr = Array.ofDim(Int.MaxValue)
@@ -47,10 +47,11 @@ object L22Exceptions extends App {
   // val noLim = infinite
 
   def crashWithSOError(): Int = crashWithOutOfMemoryError(0, new Array[Int](0))
+
   /*
   crashWithSOError()
   Exception in thread "main" java.lang.StackOverflowError
-  at lectures.part2oop.L22Exceptions$.crashWithOutOfMemoryError(L22Exceptions.scala:34)
+  at lectures.beginners.part2oop.L22Exceptions$.crashWithOutOfMemoryError(L22Exceptions.scala:34)
    */
 
   object OverflowException extends RuntimeException

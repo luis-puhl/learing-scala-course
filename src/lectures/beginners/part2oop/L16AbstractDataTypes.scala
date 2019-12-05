@@ -1,8 +1,10 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L16AbstractDataTypes extends App {
+
   abstract class Animal {
     def eat: Unit
+
     val creatureType: String = "wild"
   }
 

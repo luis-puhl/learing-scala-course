@@ -1,4 +1,4 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
 object L37AnonymousFunctions extends App {
   // anonymous function (LAMBDA - formalized by Alonzo Church 1930s)

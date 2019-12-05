@@ -1,8 +1,9 @@
-package lectures.part1basics
+package lectures.beginners.part1basics
 
 object L4Functions extends App {
   def aFunction(a: String, b: Int): String =
     a + " " + b
+
   // def is a single expression
   def aFunction2(a: String, b: Int): String = {
     a + " " + b

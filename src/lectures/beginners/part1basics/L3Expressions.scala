@@ -1,4 +1,4 @@
-package lectures.part1basics
+package lectures.beginners.part1basics
 
 object L3Expressions extends App {
   val x = 1 + 2 // expression

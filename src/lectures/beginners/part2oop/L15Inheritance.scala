@@ -1,8 +1,10 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L15Inheritance extends App {
+
   sealed class Animal {
     def eat = println("nomnomnom")
+
     private val filo = "filo"
     protected val species = "species"
     val creatureType = "wild"

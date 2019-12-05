@@ -1,4 +1,4 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
 object L38HOFsCurries extends App {
   val superFunction: (Int, (String, (Int => Boolean)) => Int) => (Int => Int) = null
@@ -6,7 +6,7 @@ object L38HOFsCurries extends App {
 
   def nTimes(f: Int => Int, n: Int, x: Int): Int =
     if (n <= 0) x
-    else nTimes(f, n-1, f(x))
+    else nTimes(f, n - 1, f(x))
 
   val plusOne = (x: Int) => x + 1
   println(nTimes(plusOne, 10, 1))

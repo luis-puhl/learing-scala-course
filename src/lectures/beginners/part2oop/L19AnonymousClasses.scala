@@ -1,9 +1,11 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L19AnonymousClasses extends App {
+
   abstract class Animal {
     def eat: Unit
   }
+
   // anonymous class
   val funnyAnimal: Animal = new Animal {
     override def eat: Unit = println("hahhaahhahhaha")

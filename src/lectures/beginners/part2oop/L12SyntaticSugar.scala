@@ -1,13 +1,20 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L12SyntaticSugar extends App {
+
   class Person(val name: String, favoriteMovie: String, val age: Int = 20) {
     def likes(movie: String): Boolean = movie == favoriteMovie
+
     def hangsOutWith(p: Person): String = s"${this.name} is hanging out with ${p.name}"
+
     def +(p: Person): String = this.hangsOutWith(p)
+
     def +(s: String): Person = new Person(s"$name ($s)", favoriteMovie)
-    def unary_! : String =  s"$name: what the heck?!"
+
+    def unary_! : String = s"$name: what the heck?!"
+
     def isAlive: Boolean = true
+
     def apply(): String = s"Hi, my name is $name and I like $favoriteMovie."
     def apply(n: Int): String = s"$name watched $favoriteMovie $n times"
     def unary_+ : Person = new Person(name, favoriteMovie, age+1)

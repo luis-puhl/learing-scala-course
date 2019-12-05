@@ -1,9 +1,11 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L14Objects extends App {
+
   // scala does not have "static", it has objects (singleton
   object Person {
     val N_EYES = 2
+
     def canFly: Boolean = false
 
     // factory

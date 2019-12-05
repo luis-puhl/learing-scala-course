@@ -1,4 +1,4 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
 object L43TuplesAndMaps extends App {
   val tuples = (1, "Hello, Scala")

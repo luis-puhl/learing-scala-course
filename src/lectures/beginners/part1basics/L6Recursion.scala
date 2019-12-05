@@ -1,4 +1,4 @@
-package lectures.part1basics
+package lectures.beginners.part1basics
 
 import scala.annotation.tailrec
 
@@ -7,7 +7,7 @@ object L6Recursion extends App {
     if (n <= 1) 1
     else {
       println(s"enter factorial $n")
-      val result = n * factorial(n-1)
+      val result = n * factorial(n - 1)
       println(s"out $n")
       result
     }

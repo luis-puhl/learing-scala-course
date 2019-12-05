@@ -1,4 +1,4 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
 import scala.util.Random
 

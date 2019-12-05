@@ -1,10 +1,11 @@
-package lectures.part1basics
+package lectures.beginners.part1basics
 
-object L7CallByValueVsCallByName  extends App {
+object L7CallByValueVsCallByName extends App {
   def byValue(x: Long): Unit = {
     println(s"by value: $x")
     println(s"by value: $x")
   }
+
   def byName(x: => Long): Unit = {
     println(s"by name: $x")
     println(s"by name: $x")

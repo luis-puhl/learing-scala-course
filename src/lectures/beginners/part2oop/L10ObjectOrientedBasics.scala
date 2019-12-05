@@ -1,4 +1,4 @@
-package lectures.part2oop
+package lectures.beginners.part2oop
 
 object L10ObjectOrientedBasics extends App {
   val person = new Person("John", 26)

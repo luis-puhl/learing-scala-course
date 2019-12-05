@@ -1,4 +1,4 @@
-package lectures.part3functionalProgramming
+package lectures.beginners.part3functionalProgramming
 
 object L49PatternsEverywhere extends App {
   val bigIdeia1 = try {

@@ -1,4 +1,4 @@
-package lectures.part1basics
+package lectures.beginners.part1basics
 
 object L9Strings extends App {
   val str: String = "Hello, I am learning Scala"
